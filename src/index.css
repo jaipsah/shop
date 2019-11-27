@@ -1,0 +1,17 @@
+:root{
+  --primary-color: #c10062;
+  --primary-border: var(--primary-color);
+  --primary-bg : #e2e2e2;
+  --fat-border-color: #ce1a1a;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: "Roboto"; font-weight: 100;}
+body {
+  margin: 0;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul{ list-style: none;}

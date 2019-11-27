@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+header{ grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+body{
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: "... header ..."
+                       "... main ..."
+                       "footer footer footer";
+
+  grid-auto-flow: column;
+  height: 100vh;
+  width: 100vw;
+  background: #e2e2e2;
+}
+body > div{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

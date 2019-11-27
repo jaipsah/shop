@@ -1,0 +1,15 @@
+div.checkbox,
+div.checkbox.unchecked {
+  width: 24px;
+  height: 24px;
+  border: solid 1px blue;
+  color:blue;
+  background: #b9b9ff;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
