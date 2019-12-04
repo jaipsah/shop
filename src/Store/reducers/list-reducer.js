@@ -1,4 +1,4 @@
-import { LOAD_LIST, CREATE_CARD, FILTER_CARDS } from "./../actions/actions";
+import { LOAD_LIST, CREATE_CARD, FILTER_CARDS, CHECKBOX_CHECKED } from "./../actions/actions";
 
 const initialState = {
   cards: [],
@@ -25,7 +25,6 @@ const cardLoader = (state = initialState, action) => {
 };
 
 const cardFilter = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case FILTER_CARDS:
       return { ...state, cards: state.cards.filter(obj => obj.id !== action.payload.id) };
@@ -34,5 +33,14 @@ const cardFilter = (state = initialState, action) => {
       return state;
   }
 };
+const isCheckboxChecked = (state = initialState, action) => {
+  switch (action.type) {
+    case CHECKBOX_CHECKED:
+      return { ...state, checked: action.payload.checked };
 
-export { listLoader, cardLoader, cardFilter };
+    default:
+      return state;
+  }
+};
+
+export { listLoader, cardLoader, cardFilter, isCheckboxChecked};

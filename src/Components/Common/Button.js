@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDelete, MdInfo, MdAddCircle } from "react-icons/md";
 
-import Label from "./Label";
+// import Label from "./Label";
 
 function Button(props) {
   let btnIconType = props.type,

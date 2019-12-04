@@ -1,10 +1,11 @@
 import { createStore, combineReducers } from "redux";
 
-import { listLoader, cardLoader } from "./reducers/list-reducer";
+import { listLoader, cardLoader, isCheckboxChecked } from "./reducers/list-reducer";
 
 const rootReducer = combineReducers({
   list:listLoader,
-  cards: cardLoader
+  cards: cardLoader,
+  checked: isCheckboxChecked
 });
 
 const store = createStore(
